@@ -118,7 +118,8 @@ class SimpleSnapControls extends StatelessWidget {
                             return AlertDialog(
                               title: Text(context.l10n.confirm),
                               content: Text(
-                                '${context.l10n.remove} ${model.snap.apps.first.name}?',
+                                context.l10n
+                                    .confirmRemove(model.snap.apps.first.name),
                               ),
                               actions: <Widget>[
                                 OutlinedButton(
