@@ -122,13 +122,13 @@ class SimpleSnapControls extends StatelessWidget {
                               ),
                               actions: <Widget>[
                                 OutlinedButton(
-                                  child: const Text('Cancel'),
+                                  child: Text(context.l10n.cancel),
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },
                                 ),
                                 ElevatedButton(
-                                  child: const Text('Remove'),
+                                  child: Text(context.l10n.remove),
                                   onPressed: () {
                                     model.remove(context.l10n.done);
                                     Navigator.of(context).pop();
